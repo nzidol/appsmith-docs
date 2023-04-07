@@ -1,7 +1,9 @@
 # Leaflet
 
 The Leaflet widget is used to display lat, long data on a OpenStreetMap or other map and allows users to select locations on a map as lat, long or draw artifacts like lines, circles or polygons on the map.
-Primary usecase it was designed for is working with OpenStreetMap data using the public API's and a MongoDB database to add further properties to the data
+Primary usecase it was designed for is working with OpenStreetMap data using the public API's and a MongoDB database to add further properties to the data.
+
+The widget is build on top of Leaflet, React-Leaflet and GeomMan comopnents.
 
 {% embed url="https://www.youtube.com/watch?v=xCTiPNlBKLU" %}
 
