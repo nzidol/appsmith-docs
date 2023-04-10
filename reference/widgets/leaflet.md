@@ -3,9 +3,7 @@
 The Leaflet widget is used to display lat, long data on a OpenStreetMap or other map and allows users to select locations on a map as lat, long or draw artifacts like lines, circles or polygons on the map.
 Primary usecase it was designed for is working with OpenStreetMap data using the public API's and a MongoDB database to add further properties to the data.
 
-The widget is build on top of Leaflet, React-Leaflet and GeomMan comopnents.
-
-{% embed url="https://www.youtube.com/watch?v=xCTiPNlBKLU" %}
+The widget is build on top of Leaflet, React-Leaflet and GeoMan comopnents.
 
 ## Properties
 
@@ -17,16 +15,29 @@ These properties allow you to edit the Map widget. All these properties are pres
 
 | Widget Property            | Description                                                                                                                                                                                |
 | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Visible**                | Controls widget's visibility on the page. When turned off, the widget will not be visible when the app is published                                                                        |
+| **Animate Loading**        | Allows you to control a widget’s animation on the page load.                                                                                                                               |
+
+### Map Properties
+| Map Property            | Description                                                                                                                                                                                |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Initial location**       | This property sets the default location that the map should focus on.                                                                                                                      |
 | **Default markers**        | <p>This property sets an array of default markers. Every default marker will have the following format:</p><p><code>{lat: number, long: number, title?: string, color?: string}</code></p> |
 | **Map & Marker Centring**  | Controls whether the clicked marker is centred on the map.                                                                                                                                 |
 | **Enable search location** | This property enables a search bar on the map which users can use to navigate                                                                                                              |
 | **Enable pick location**   | This property allows users to select a location on the map and moves the map marker to this location. The `selectedMarker` field is populated with this marker.                            |
 | **Create new marker**      | This property enables scrolling within the contents of each tab                                                                                                                            |
-| **Visible**                | Controls widget's visibility on the page. When turned off, the widget will not be visible when the app is published                                                                        |
-| **Animate Loading**        | Allows you to control a widget’s animation on the page load.                                                                                                                               |
 | **Zoom Level**             | Sets the default zoom level of the map                                                                                                                                                     |
-
+### Layer Properties
+| Layer Property            | Description                                                                                                                                                                                |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Initial location**       | This property sets the default location that the map should focus on.                                                                                                                      |
+| **Default markers**        | <p>This property sets an array of default markers. Every default marker will have the following format:</p><p><code>{lat: number, long: number, title?: string, color?: string}</code></p> |
+| **Map & Marker Centring**  | Controls whether the clicked marker is centred on the map.                                                                                                                                 |
+| **Enable search location** | This property enables a search bar on the map which users can use to navigate                                                                                                              |
+| **Enable pick location**   | This property allows users to select a location on the map and moves the map marker to this location. The `selectedMarker` field is populated with this marker.                            |
+| **Create new marker**      | This property enables scrolling within the contents of each tab                                                                                                                            |
+| **Zoom Level**             | Sets the default zoom level of the map                                                                                                                                                     |
 ### Binding Properties
 
 These properties allow you to bind your Map widget with any other widget in queries or JS objects. The following table lists all the binding properties.
